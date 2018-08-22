@@ -2,13 +2,17 @@
 set -e # halt script on error
 
 # Make sure we have the required dependencies.
+echo "$ npm install"
 npm install
 
 # Create the JavaScript bundle.
+echo "$ npm run build:js"
 npm run build:js
 
 # build site with jekyll
-bundle exec jekyll build
+echo "$ bundle exec jekyll build --verbose"
+bundle exec jekyll build --verbose
 
 # run htmlproofer to test the site
+echo "$ bundle exec htmlproofer ./_site --check-html"
 bundle exec htmlproofer ./_site --check-html
