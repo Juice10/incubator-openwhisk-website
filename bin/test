@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -e # halt script on error
+
+# Make sure we have the required dependencies.
+npm install
+
+# Create the JavaScript bundle.
+npm run build:js
+
+# build site with jekyll
+bundle exec jekyll build
+
+# run htmlproofer to test the site
+bundle exec htmlproofer ./_site --check-html

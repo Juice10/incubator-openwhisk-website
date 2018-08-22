@@ -107,7 +107,7 @@ layout: default
     </div>
 
     <section id="whiskNodes">
-        <main id="doc">
+        <main class="doc">
             <div class="content">
                 <a class="indexable" id="documentation"></a>
                 <h2>Documentation</h2>
@@ -117,7 +117,7 @@ layout: default
             </div>
         </main>
 
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="project-structure"></a>
             <h2>Project Structure</h2>
@@ -468,7 +468,7 @@ layout: default
         </div>
     </main>
 
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <p>
                 <h5>OpenWhisk documentation is organized by the following roles:</h5>
@@ -484,7 +484,7 @@ layout: default
     </main>
 
     <!-- Operators Section -->
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="operators"></a>
             <h2>Operators</h2>
@@ -492,7 +492,7 @@ layout: default
     </main>
 
     <!-- Deployment section under Operator -->
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="openwhisk_deployment"></a>
             <h3>OpenWhisk Deployment</h3>
@@ -570,7 +570,7 @@ $ make quick-start
     </main>
 
     <!-- Operators Administrative Operations -->
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="deployment_admin"></a>
             <h3>Administrative Operations</h3>
@@ -584,7 +584,7 @@ $ make quick-start
     </main>
 
     <!-- Operators resources -->
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="operators_resources"></a>
             <h3>Operators Resources</h3>
@@ -600,7 +600,7 @@ $ make quick-start
     </main>
 
     <!-- Developers Section -->
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="developers"></a>
             <h2>Developers</h2>
@@ -612,7 +612,7 @@ $ make quick-start
     </main>
 
     <!-- Developers Pre Requisites section -->
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="pre-requisites"></a>
             <h4>Pre-requisites</h4>
@@ -624,7 +624,7 @@ $ make quick-start
     </main>
 
     <!-- Using OpenWhisk section -->
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="using-openwhisk"></a>
             <h4>Using OpenWhisk</h4>
@@ -734,7 +734,7 @@ $ wsk list
     </main>
 
         <!-- actions section -->
-        <main id="doc">
+        <main class="doc">
             <div class="content">
                 <a class="indexable" id="actions"></a>
                 <h4>Actions</h4>
@@ -800,7 +800,7 @@ $ wsk list
         </main>
 
         <!-- Here we are starting with writing actions in NodeJS -->
-        <main id="doc">
+        <main class="doc">
             <div class="content">
                 <a class="indexable" id="nodejs"></a>
                 <h4>NodeJs</h4>
@@ -890,7 +890,7 @@ $ wsk list
         </main>
 
         <!-- Here we are starting with writing actions in python -->
-        <main id="doc">
+        <main class="doc">
             <div class="content">
                 <a class="indexable" id="python"></a>
                 <h4>Python</h4>
@@ -976,7 +976,7 @@ $ wsk list
         </main>
 
         <!-- Here we are starting with writing actions in python -->
-        <main id="doc">
+        <main class="doc">
             <div class="content">
                 <a class="indexable" id="go"></a>
                 <h4>Go</h4>
@@ -1067,7 +1067,7 @@ $ GOOS=linux GOARCH=amd64 go build -o exec
         </main>
 
         <!-- Here we are starting with writing actions in Java -->
-        <main id="doc">
+        <main class="doc">
             <div class="content">
                 <a class="indexable" id="java"></a>
                 <h4>Java</h4>
@@ -1134,7 +1134,7 @@ $ jar cvf hello.jar Hello.class
             </div>
         </main>
 
-        <!--main id="doc">
+        <!--main class="doc">
             <div class="content">
                 <h4 id="docker">Docker</h4>
                 <p></p>
@@ -1160,7 +1160,7 @@ $ jar cvf hello.jar Hello.class
             </div>
         </main-->
 
-        <main id="doc">
+        <main class="doc">
             <div class="content">
                 <a class="indexable" id="php"></a>
                 <h4 id="php">PHP</h4>
@@ -1244,7 +1244,7 @@ $ jar cvf hello.jar Hello.class
             </div>
         </main>
 
-        <!--main id="doc">
+        <!--main class="doc">
             <div class="content">
                 <a class="indexable" id="swift"></a>
                 <h4>Swift</h4>
@@ -1268,7 +1268,7 @@ $ jar cvf hello.jar Hello.class
         </main-->
 
         <!-- Managing Actions with OpenWhisk Packages -->
-        <main id="doc">
+        <main class="doc">
             <div class="content">
                 <a class="indexable" id="managing_actions_with_openwhisk_packages"></a>
                 <h4>Managing Actions with OpenWhisk Packages</h4>
@@ -1367,7 +1367,7 @@ $ jar cvf hello.jar Hello.class
                 </p>
         </div>
     </main>
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="connecting_actions_to_event_sources"></a>
             <h4>Connecting Actions to Event Sources</h4>
@@ -1376,7 +1376,7 @@ $ jar cvf hello.jar Hello.class
                 OpenWhisk is based on event-driven architecture in which actions/functions should be connected
                 to external/internal event sources such as message queues, database changes, webhooks, etc. When these
                 events happen, functions/actions are automatically invoked without explicitly invoking them
-                unlike we saw before in <a href="#creating-and-invoking-actions">Creating And Invoking Actions</a>.
+                unlike we saw before in <a href="#actions">Creating And Invoking Actions</a>.
                 Now, events from these internal/external event sources are channeled through a trigger.
             </p>
             <p>
@@ -1481,7 +1481,7 @@ abcd.... locationUpdate
         </div>
     </main>
 
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="using_openwhisk_enabled_services"></a>
             <h4>Using OpenWhisk Enabled Services</h4>
@@ -1549,7 +1549,7 @@ abcd.... locationUpdate
         </div>
     </main>
 
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="sample_openwhisk_applications"></a>
             <h4>Sample OpenWhisk Applications</h4>
@@ -1580,7 +1580,7 @@ abcd.... locationUpdate
         </div>
     </main>
 
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="tutorial_and_workshop"></a>
             <h4>Tutorial and Workshop</h4>
@@ -1599,7 +1599,7 @@ abcd.... locationUpdate
         </div>
     </main>
 
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="development_tools"></a>
             <h4>Development Tools</h4>
@@ -1614,7 +1614,7 @@ abcd.... locationUpdate
     </main>
 
     <!-- Contributors Section -->
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="contributors"></a>
             <h2>Contributors</h2>
@@ -1633,7 +1633,7 @@ abcd.... locationUpdate
     </main>
 
     <!-- Other Resources Section -->
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="other-resources"></a>
             <h2>Other Resources</h2>
@@ -1646,7 +1646,7 @@ abcd.... locationUpdate
     </main>
 
     <!-- Frequently Asked Questions -->
-    <main id="doc">
+    <main class="doc">
         <div class="content">
             <a class="indexable" id="faq"></a>
             <h2>Frequently Asked Questions</h2>
