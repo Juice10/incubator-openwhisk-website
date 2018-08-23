@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.4.2
+  - 2.4.1
 
 script: ./bin/test
 
@@ -12,8 +12,6 @@ script: ./bin/test
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-
-exclude: [vendor]
 
 sudo: false # route your build to the container-based infrastructure for a faster build
 
